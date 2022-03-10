@@ -5,8 +5,8 @@ import csv
 import sys
 import getpass
 
-URL = input("Digite a URL Zabbix-server: ")
-USERNAME = input("Digite usuário: ")
+URL = sys.argv[1]
+USERNAME = sys.argv[2]
 PASSWORD = getpass.getpass("Digite a senha: ")
 
 try:
