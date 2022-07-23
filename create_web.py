@@ -2,7 +2,6 @@
 # Autor: Emerson Cesario
 # E-mail: emerson.cesario50@gmail.com
 
-from email.mime import application
 from zabbix_api import ZabbixAPI,Already_Exists
 import csv
 import sys
