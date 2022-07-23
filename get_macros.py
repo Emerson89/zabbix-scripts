@@ -25,9 +25,9 @@ def procurando_macros(nome_macros):
         "search": "hostids"
     })
     for x in id:
-            with open('hostsids.csv', 'a',newline='') as arquivo_csv:
+            with open('macros.csv', 'a',newline='') as arquivo_csv:
                escrever = csv.writer(arquivo_csv, delimiter=';')
-               escrever.writerow([x['hostmacroid'],x['macro'],x['value']])
+               escrever.writerow([x['hostid'],x['value']])
 nome_macros = input("Pesquise pelo id do host: ")
 print()
 procurando_macros(nome_macros)
