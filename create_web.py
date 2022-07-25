@@ -93,7 +93,6 @@ def create_web(step):
            
            trigger = zapi.trigger.create({"description": "Failed step of scenario URL: " + step,
                                 "expression": "{"+hostname+":web.test.fail["+nome+"].sum(#3)}>=3",
-                                "hostid": hostids,
                                 "priority": 5})
            
            print(f'URL(s) cadastrada {r}')
